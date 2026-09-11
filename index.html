@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>user-input</title>
+	</head>
+	<body>
+		<input type="number" placeholder="last 3 digit" id="abc">
+		<button onclick="digit()">
+			Find
+		</button>
+		<p id="result">Print</p>
+		<script>
+			function digit(){
+				let a=(document.getElementById("abc").value);
+				let b=1000;
+				document.getElementById("result").innerHTML=a%b;
+			}
+		</script>
+	</body>
+</html>
